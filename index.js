@@ -143,7 +143,7 @@ function getRemainingHp(maxHp, currentHp, damage) {
 
   return newHp;
 }
-console.log(getRemainingHp(100, 80, 200)); //dead
+console.log(getRemainingHp(100, 80, 200)); //deadd
 
 /**
  * All creatures can see in bright light.
@@ -156,11 +156,11 @@ console.log(getRemainingHp(100, 80, 200)); //dead
 function canSee(light, vision) {
   // TODO
   if (vision === "dark") {
-    return true; // sees everything
+    return true;
   }
 
   if (light === "bright") {
-    return true; // everyone sees bright light
+    return true;
   }
 
   if (light === "dim") {
@@ -168,7 +168,7 @@ function canSee(light, vision) {
   }
 
   if (light === "dark") {
-    return false; // only darkvision handled above
+    return false;
   }
 
   return false;
